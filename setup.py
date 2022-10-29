@@ -7,12 +7,12 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="ogcFeatureApiCollectionDownloader",
+    name="mvtToPng",
     version="0.0.1",
-    description="Automatically download a collection from an OGC Feature API",
+    description="Convert a vector tile to a png.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/mkeller3/ogcFeatureApiCollectionDownloader",
+    url="https://github.com/mkeller3/mvtToPng",
     author="Michael Keller",
     author_email="michaelkeller03@gmail.com",
     license="GNU General Public License v3.0",
@@ -25,7 +25,7 @@ setuptools.setup(
     install_requires=required,
     entry_points={
         "console_scripts": [
-            "ogcFeatureApiCollectionDownloader=ogcFeatureApiCollectionDownloader.__main__:main",
+            "mvtToPng=mvtToPng.__main__:main",
         ]
     },
 )
