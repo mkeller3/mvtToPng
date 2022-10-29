@@ -9,6 +9,7 @@ DOWNLOAD_LOCATION = f"{os.getcwd()}/downloads"
 r = requests.get("https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer/tile/3/3/1.pbf")
 vector_data = r.content
 
+
 def test_bytes_to_png():
     result = converter.Converter(
         vector_tile_in_bytes=vector_data,
@@ -18,4 +19,4 @@ def test_bytes_to_png():
         download_path=DOWNLOAD_LOCATION,
         file_name="World_Basemap_v2"
     ).convert()
-    assert result == True
+    assert result is True

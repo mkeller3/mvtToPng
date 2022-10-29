@@ -34,7 +34,16 @@ class Converter():
     This class provides you the ability to convert a vector tile to a png.
     """
 
-    def __init__(self, vector_tile_in_bytes: bytes, z: int, x: int, y: int, download_path: str, file_name: str, color: str="#000000"):
+    def __init__(
+        self,
+        vector_tile_in_bytes: bytes,
+        z: int,
+        x: int,
+        y: int,
+        download_path: str,
+        file_name: str,
+        color: str = "#000000"
+    ):
         """
         Init method
 
@@ -62,7 +71,12 @@ class Converter():
 
         """
 
-        features = vt_bytes_to_geojson(self.vector_tile_in_bytes, self.x, self.y, self.z)
+        features = vt_bytes_to_geojson(
+            b_content=self.vector_tile_in_bytes,
+            x=self.x,
+            y=self.y,
+            z=self.z
+        )
 
         if not os.path.exists(self.download_path):
             os.makedirs(self.download_path)

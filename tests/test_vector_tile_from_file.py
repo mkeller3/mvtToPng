@@ -9,6 +9,7 @@ DOWNLOAD_LOCATION = f"{os.getcwd()}/downloads"
 with open(FILE_PATH, 'rb') as file:
     vector_data = file.read()
 
+
 def test_bytes_to_png():
     result = converter.Converter(
         vector_tile_in_bytes=vector_data,
@@ -18,4 +19,4 @@ def test_bytes_to_png():
         download_path=DOWNLOAD_LOCATION,
         file_name="states"
     ).convert()
-    assert result == True
+    assert result is True
