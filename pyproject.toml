@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools"]
+
+[tool.setuptools]
+packages = ["mvtToPng"]
+
+[project]
+name = "mvtToPng"
+version = "1.0.6"
+description = "Convert a vector tile to a png."
+readme = "README.md"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3"
+]
+authors = [
+    {name = "Michael Keller", email = "michaelkeller03@gmail.com"}
+]
+
+
+dependencies = [
+    "Fiona==1.10.1",
+    "geopandas==1.0.1",
+    "mapbox-vector-tile==1.2.1",
+    "matplotlib==3.10.0 ",
+    "pandas==2.2.2",
+    "Pillow==11.1.0",
+    "Shapely==2.0.6",
+    "vt2geojson==0.2.1",
+]
