@@ -6,7 +6,7 @@ packages = ["mvtToPng"]
 
 [project]
 name = "mvtToPng"
-version = "1.0.6"
+version = "1.0.10"
 description = "Convert a vector tile to a png."
 readme = "README.md"
 license = {text = "MIT"}
@@ -20,11 +20,12 @@ authors = [
 
 dependencies = [
     "Fiona==1.10.1",
-    "geopandas==1.0.1",
-    "mapbox-vector-tile==1.2.1",
-    "matplotlib==3.10.0 ",
-    "pandas==2.2.2",
-    "Pillow==11.1.0",
-    "Shapely==2.0.6",
+    "geopandas==1.1.2",
+    "mapbox-vector-tile==2.1.0",
+    "matplotlib==3.10.8",
+    "pandas==2.3.3",
+    "Pillow==12.1.0",
+    "Shapely==2.1.2",
     "vt2geojson==0.2.1",
+    "protobuf==5.29.5"
 ]
