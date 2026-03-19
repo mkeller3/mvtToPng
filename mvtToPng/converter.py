@@ -83,7 +83,7 @@ class Converter():
 
         df_places = gpd.read_file(json.dumps(features), driver='GeoJSON')
 
-        df_places.plot(color=self.color)
+        df_places.plot(color=self.color, aspect=1)
 
         plt.axis('off')
 
