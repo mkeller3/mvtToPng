@@ -6,7 +6,7 @@ packages = ["mvtToPng"]
 
 [project]
 name = "mvtToPng"
-version = "1.0.12"
+version = "1.0.13"
 description = "Convert a vector tile to a png."
 readme = "README.md"
 license = {text = "MIT"}
