@@ -32,3 +32,10 @@ dependencies = [
     "vt2geojson==0.2.1",
     "protobuf==6.33.5"
 ]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==7.2.0",
+    "coverage==6.5.0",
+    "flake8"
+]
